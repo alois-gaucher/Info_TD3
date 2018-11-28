@@ -24,6 +24,9 @@ int main() {
 	printf("Veuillez taper une chaîne de caractères: ");
 	scanf("%s",chaine);
 	printf("Votre chaîne de caractères est: %s \n",chaine);
-	renversementx(chaine);
+	renversement(chaine);
 	printf("La chaîne de caractères renversée est: %s \n",chaine2);
+	if (strcmp(chaine,chaine2) == 0)
+		printf("C'est un palindrome!\n");
+	else printf("Ce n'est pas un palindrome!\n");
 }
