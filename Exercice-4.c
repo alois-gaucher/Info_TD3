@@ -14,7 +14,9 @@ int compteur = 0,caractere,i;
 void majuscule(char chaine[]) {
 	int longueur = strlen(chaine);
 	for (i = 0; i < longueur; i++) {
-		if ((96 < chaine[i]) && (chaine[i] < 123))
+		if ((32 == chaine[i-1]))
+		chaine[i]=chaine[i]-32;
+		else if ((0 == chaine[i-1]))
 		chaine[i]=chaine[i]-32;
 	}
 }
