@@ -19,6 +19,7 @@ int longueurchaine(char chaine[]) {
 void majuscule(char chaine[]) {
 	int longueur = longueurchaine(chaine);
 	for (i = 0; i < longueur; i++) {
+		if ((96 < chaine[i]) && (chaine[i] < 123))
 		chaine[i]=chaine[i]-32;
 	};
 }
